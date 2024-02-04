@@ -1,0 +1,31 @@
+﻿@page
+@model WebApp_Core.Pages.Sample8Model
+@{
+    <div>
+        <p>@Model.Message</p>
+        <form method="get">
+
+            <table align="center" border="0">
+                <tr>
+                    <th>EmpId</th>
+                    <th>EName</th>
+                    <th>Designation</th>
+                    <th>DOJ</th>
+                    <th>Salary</th>
+                    <th>Deptno</th>
+                </tr>
+                @foreach (var e in Model.EmpList)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(model => e.EmpId)</td>
+                        <td>@e.EName</td>
+                        <td>@e.Designation</td>
+                        <td>@e.DOJ</td>
+                        <td>@e.Salary</td>
+                        <td>@e.Deptno</td>
+                    </tr>
+                }
+            </table>
+        </form>
+    </div>
+}

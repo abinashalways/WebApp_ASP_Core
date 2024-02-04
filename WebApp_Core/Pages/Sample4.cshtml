@@ -1,0 +1,16 @@
+﻿@page
+@model WebApp_Core.Pages.Sample4Model
+@{
+    int[] arr = new int[] { 10, 20, 30, 40, 50 };
+    <p>the values are in vertical format</p>
+    foreach(int v in arr)
+    {
+        
+        @v<br />
+    }
+   <br /> <p>the values are in horizontal format</p>
+    for(int i = 0; i < arr.Length; i++)
+    {
+       @(arr[i]+" ");
+    }
+}

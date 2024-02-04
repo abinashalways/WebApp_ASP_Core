@@ -1,0 +1,37 @@
+﻿@page
+@model WebApp_Core.Pages.Sample6Model
+@{
+<style>
+
+    #addbtn {
+    width: 80px; height:28px; 
+    }
+
+</style>
+}
+<div>
+   
+    <form method="post">
+        <table align="center" border="0">
+            <tr >
+                <th width="190px">Enter First Number</th>
+                @*<td align="right"><input type="text" name="T1" /></td> *@
+                <td> @Html.TextBox("T1")</td>
+            </tr>
+            <tr>
+                <th width="190px">Enter Second Number</th>
+               @*  <td align="right"><input type="text" name="T2" /></td> *@
+                <td>@Html.TextBox("T2")</td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" id="addbtn" name="B1" value="Add" /></td>
+                <td align="center"><input type="submit" id="addbtn" name="B1" value="Subtract" /></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" id="addbtn" name="B1" value="Multiply" /></td>
+                <td align="center"><input type="submit" id="addbtn" name="B1" value="Division" /></td>
+            </tr>
+        </table>
+    </form>
+</div>
+<h3> @Model.Message</h3> 

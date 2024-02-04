@@ -1,0 +1,61 @@
+﻿@page
+@model WebApp_Core.Pages.Sample7Model
+@{}
+                    <style>
+                    #btnadd{
+                        width:100px;height:30px;
+                    }
+                    
+                    
+                    </style>
+           
+                    <h3>@Model.Message</h3>
+                    <div>
+                    <form method="post">
+                    <table align="center" border="1">
+                    
+                                <tr>
+                                    <th width="160px">Enter EmpId</th>
+                                    <td>@Html.TextBox("EmpId")</td>
+                                </tr>
+                                <tr>
+                                    <th width="160px">Enter EName</th>
+                                    <td>@Html.TextBox("EName")</td>
+                                </tr>
+                                <tr>
+                                    <th width="160px">Enter Designation</th>
+                                    <td>@Html.TextBox("Designation")</td>
+                                </tr>
+                                <tr>
+                                    <th width="160px">Enter DOJ</th>
+                                    <td>@Html.TextBox("DOJ")</td>
+                                </tr>
+                                <tr>
+                                    <th width="160px">Enter Salary</th>
+                                    <td>@Html.TextBox("Salary")</td>
+                                </tr>
+                                <tr>
+                                    <th width="160px">Enter Deptno</th>
+                                    <td>@Html.TextBox("Deptno")</td>
+                                </tr>
+                                <tr>
+                                    <td align="center"><input type="submit" id="btnadd" name="B1" value="Insert" /></td>
+                                    <td align="center"><input type="submit" id="btnadd" name="B1" value="Update" /></td>
+
+                                </tr>
+                                <tr >
+                                    <td align="center"><input type="submit" id="btnadd" name="B1" value="Delete" /></td>
+                                    <td align="center"><input type="submit" id="btnadd" name="B1" value="Find" /></td>
+
+                                </tr>
+
+                    
+                    </table>
+                    </form>
+                    </div>
+                   
+
+
+@section scripts{
+    <script src="~/js/main.js"></script>
+}

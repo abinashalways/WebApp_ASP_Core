@@ -1,0 +1,17 @@
+﻿@page
+@model WebApp_Core.Pages.Sample2Model
+@{
+    int a = 11; string s;
+    if (a % 2 == 0)
+    {
+        s = "Even Number";
+    }
+    else
+    {
+         s= "Odd Number";
+    }
+    <div>
+    value of a is @a is <br /> @s
+
+    </div>
+}

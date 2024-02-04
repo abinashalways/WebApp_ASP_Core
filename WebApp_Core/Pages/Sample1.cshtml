@@ -1,0 +1,19 @@
+﻿@page
+@model WebApp_Core.Pages.Sample1Model
+@{
+    int a = 10;
+    double b = 20.5;
+    string s = "welcome";
+    double c = a + b;
+    
+    <div>
+        @a
+        <h2>Welcome to ASP.Net Core</h2>
+        <p>Value of a is @a</p>
+        <p>Value of b is @b</p>
+        <p>Value of s is @s</p>
+        <p>Sum of a and b is @c</p>
+        <p>Sum of a and b is @(a + b)</p>
+
+    </div>
+}
